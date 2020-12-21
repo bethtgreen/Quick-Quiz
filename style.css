@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+/* this will be the color of the body*/
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+/* these are supposed to be what changes the color of the buttons if correct or incorrect*/
+body.correct {
+    --hue: var(--hue-correct);
+    color: green;
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+    color: red;
+}
+/* this is the color of the box*/
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: thistle;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;  
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid palevioletred, 100%, 60%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+  background-color: greenyellow;
+}
+
+.btn.wrong {
+    background-color: indianred;
+
+}
+.question {
+    
+}
+
+
+I NEED TO FIGURE OUT HOW TO BUILD A TIMER AND CONNECT IT TO WRONG VS RIGHT ANSWERS ON THIS QUIZ.
+I also need to figure out how to change the questions on click and give it new questions. 7 questions. 
