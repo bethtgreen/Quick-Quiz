@@ -8,22 +8,20 @@
     <title>Quick! Code Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">What is the RAREST M&M color?</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Blue</button>
-                <button class="btn">Green</button>
-                <button class="btn">Brown</button>
-                <button class="btn">Yellow</button>
-            </div>
+    <div class="container"> 
+        <div id="start-container" class="card">
+            <button id="start">Start</button>
         </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class = "next-btn btn hide">Next</button>
+        <div id="question-container" class="card hide">
+            <h6 id="timer"></h6>
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid">
+                </div>
+        </div> 
+        <div id="end-container" class="card hide">
+           <input type="text" id="initials" max="3"/>
+            <button id="submit">Submit</button>
         </div>
     </div>
 </body>
 </html>
-
-*having trouble uploading to github saying fatal*

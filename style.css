@@ -71,6 +71,13 @@ body.wrong {
     
 }
 
+.hide {
+    display: none
+
+}
+
+
+
 
 I NEED TO FIGURE OUT HOW TO BUILD A TIMER AND CONNECT IT TO WRONG VS RIGHT ANSWERS ON THIS QUIZ.
 I also need to figure out how to change the questions on click and give it new questions. 7 questions. 
