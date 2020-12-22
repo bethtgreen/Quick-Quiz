@@ -8,6 +8,46 @@ var questions = [
         question: "Which of these candies is vegan?", 
         choices:["Airheads", "Twix", "Kit-Kat", "Candy Corn"],
         correct: "Airheads"
+    },
+    {
+        question: "What candy's motto is 'Taste the Rainbow'?",
+        choices:["Skittles", "Jolly Rancher", "M&M","PEZ"],
+        correct: "Skittles" 
+    },
+    {
+        question: "A Hershey's Kiss mixed with white chocolate is called what?",
+        choices:["Zebras", "Hershey's Swirl", "a Hug", "Stripes"],
+        correct: "a Hug"
+    },
+    { 
+        question: "What European country eats the most chocolate per capita?",
+        choices:["Sweden", "Norway", "France", "Switzerland"],
+        correct: "Switzerland"
+    },
+    {
+        question: "What candy bar was named after their family horse?",
+        choices:["Nutter Butter", "Snickers", "Kit Kat", "Twix"],
+        correct: "Snickers"
+    },
+    {
+        question: "What flavor is Good & Plenty candy?",
+        choices:["Strawbery", "Orange", "Licorice", "Lime"],
+        correct: "Licorice"
+    },
+    {
+        question: "How many calories are in a single Peeps marshmallow chick?",
+        choices:["250", "500", "28", "12"],
+        correct: "28"
+    },
+    {
+        question: "How much chocolate and candy are produced in the US each year?",
+        choices:["40 thousand tons", "2 million pounds", "3 million tons", "7 billion pounds"],
+        correct: "7 billion pounds"
+    },
+    {
+        question: "Can you tell that I like candy?!",
+        choices:["No...", "You are weird, candy is gross.", "Yes! It's obvious!", "I don't know what candy is."],
+        correct: "Yes! It's obvious!"
     }
 
 ];
@@ -59,7 +99,7 @@ function questionClick(){
     if (this.value !== questions[index].correct){
         console.log("wrong");
         // take time off timer 
-        time -= 15;
+        time -= 5;
         //check for 0 on timer
 
         if (time < 0) {
@@ -80,6 +120,8 @@ function questionClick(){
 
     }
     // move on to next question
+
+    
 } 
 function endGame(){
     clearInterval(timerId);
