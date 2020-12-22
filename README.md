@@ -8,4 +8,6 @@ This is a candy themed multiple choice quiz in which if your answer is wrong, it
 ![Alt text](./assets/screenshot2.png "question page")
 ![Alt text](./assets/screenshot3.png "end page")
 
-*spot for link*
+*live link*
+
+https://bethtgreen.github.io/Quick-Quiz/
